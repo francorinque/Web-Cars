@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/main.css">
+    <title>CARS</title>
+</head>
+<body>
+
+
+<header class="container header">
+    <div class="acces-now">
+        <p class="acces-now__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <a href="#">Acces Now</a> </p>
+    </div>
+    <!-- nav -->
+    <div class="navbar-container">
+        <span class="logo">LOGO</span>
+
+        <nav class="navbar">
+            <!-- close -->
+            <img src="Images/equis.svg" class="close">
+            <ul class="navbar__menu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" class="navbar__download-app">Download app</a>
+        </nav>
+        <!-- toggle -->
+        <img src="Images/toggle.svg" class="toggle">
+    </div>
+    <!-- content -->
+    <div class="hero__container">
+        <div class="hero__content">
+            <div class="hero__text">
+                <h1 class="title">Lorem ipsum dolor sit amet.</h1>
+                <p class="hero__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus exercitationem enim est maiores!</p>
+                <!-- botones -->
+                <div class="btns">
+                    <a href="#" class="cta">Booking now</a>
+                    <a href="#" class="cta cta--border">See all cars</a>
+                </div>
+            </div>
+            <!-- img -->
+            <figure class="hero__img">
+                <img src="Images/car.png">
+            </figure>
+        </div>
+        <!-- marcas -->
+        <div class="hero__marcas">
+            <img src="Images/bmw-logo.png">
+            <img src="Images/chevrolet-logo.png">
+            <img src="Images/fiat-logo.png">
+            <img src="Images/dacia-logo.png">
+            <img src="Images/jeep.png">
+            <img src="Images/subaru-logo.png">
+            <img src="Images/kia-logo.png">
+            <img src="Images/toyota-logo.png">
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+<script>
+    const toggle = document.querySelector('.toggle');
+    const close = document.querySelector('.close');
+    const navbar = document.querySelector('.navbar');
+
+    toggle.addEventListener('click',()=> {
+        navbar.classList.add('mostrar')
+    })
+
+    close.addEventListener('click',()=> {
+        navbar.classList.remove('mostrar')
+    })
+
+</script>
+
+</body>
+</html>
