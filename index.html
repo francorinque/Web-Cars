@@ -11,7 +11,7 @@
 <body>
 
 
-<header class="container header">
+<header class="container header" id="hero">
     <div class="acces-now">
         <p class="acces-now__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <a href="#">Acces Now</a> </p>
     </div>
@@ -23,11 +23,11 @@
             <!-- close -->
             <img src="Images/equis.svg" class="close">
             <ul class="navbar__menu">
-                <li><a href="#">About</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#">Features</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Resources</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#footer">Dirección</a></li>
             </ul>
             <a href="#" class="navbar__download-app">Download app</a>
         </nav>
@@ -68,7 +68,8 @@
     </div>
 </header>
 
-<section class="container about">
+<main>
+    <section class="container about" id="about">
   <figure class="about__img">
     <img src="Images/collecion-autos.jpg">
   </figure>
@@ -85,7 +86,6 @@
 </section>
 
 <section class="container services">
-    <img src="Images/img-absolute.jpg" class="services__img-absolute">
 
         <div class="services__texto">
             <h3 class="services__small-title">Our Services</h3>
@@ -111,6 +111,35 @@
             </div>
         </div>
 </section>
+</main>
+
+
+<footer class="footer" id="footer">
+   <div class="container container--footer">
+       <h2 class="title">¿Dónde estamos?</h2>
+    <!-- mapa -->
+    <div class="footer__content">
+        <div class="footer__header">
+            <div class="footer__mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51998.63556268303!2d-60.91775815664834!3d-35.4569055782753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bf0deaa538bdeb%3A0x9d21f4202189f16c!2s9%20de%20Julio%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1659890191737!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            </div>
+        </div>
+        <!-- links -->
+        <div class="footer__links">
+            <a href="#hero">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#">Events</a>
+            <a href="#">Reseñas</a>
+            <a href="#">Clientes</a>
+        </div>
+    </div>
+    <!-- links -->
+    <div class="footer__copyright">
+        <span class="footer__span">&copy; Rinque Franco 2022</span>
+    </div>
+   </div>
+</footer>
+
 
 
 
